@@ -35,7 +35,6 @@ const AddCraftItem = () => {
     }; 
     console.log(addItem);
 
-
     // send data to server
     fetch('http://localhost:5000/addItem',
     {
@@ -144,30 +143,12 @@ const AddCraftItem = () => {
                 />
               </div>
 
-              {/* done */}
-              {/* <div className="col-span-full sm:col-span-3">
-                <label htmlFor="lastname" className="text-sm">
-                  Last name
-                </label>
-                <input
-                  id="lastname"
-                  type="text"
-                  placeholder="Last name"
-                  className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-default-600 dark:border-gray-300"
-                  fdprocessedid="qvp45n"
-                />
-              </div> */}
+              
               <div className="col-span-full sm:col-span-3">
                 <label htmlFor="firstname" className="text-sm">
                   Customization
                 </label>
-                {/* <input
-                  id="firstname"
-                  type="text"
-                  placeholder="First name"
-                  className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-default-600 dark:border-gray-300"
-                  fdprocessedid="joguop"
-                /> */}
+                
                 <select
                   id=""
                   name="customization"
@@ -184,13 +165,7 @@ const AddCraftItem = () => {
                 <label htmlFor="lastname" className="text-sm">
                   Stock Status
                 </label>
-                {/* <input
-                  id="lastname"
-                  type="text"
-                  placeholder="Last name"
-                  className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-default-600 dark:border-gray-300"
-                  fdprocessedid="qvp45n"
-                /> */}
+                
                 <select
                   id=""
                   name="stockStatus"
@@ -247,14 +222,7 @@ const AddCraftItem = () => {
                 <label htmlFor="zip" className="text-sm">
                   Processing time
                 </label>
-                {/* <input
-                  id="zip"
-                  type=""
-                  name="processing_time"
-                  placeholder=" Processing time"
-                  className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-default-600 dark:border-gray-300"
-                  fdprocessedid="k2ipla"
-                /> */}
+               
                 <input
                   id="zip"
                   type="time"
