@@ -3,7 +3,7 @@ import useAuth from "../Hooks/useAuth";
 
 const NavBar = () => {
   const { user, logOut } = useAuth();
-  console.log("this is user::",user);
+  // console.log("this is user::",user);
 
   const nabLinks = (
     <>
@@ -19,7 +19,7 @@ const NavBar = () => {
         <NavLink to="/AddCraftItem">Add Craft Item</NavLink>
       </li>
       <li className="text-base mr-2">
-        <NavLink to="/profile">My Art&Craft List</NavLink>
+        <NavLink to="/MyArtsCraftList">My Art&Craft List</NavLink>
       </li>
     </>
   );
