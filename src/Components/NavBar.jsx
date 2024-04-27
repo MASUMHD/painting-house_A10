@@ -52,23 +52,28 @@ const NavBar = () => {
               {nabLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl md:text-3xl md:font-extrabold">Painting House</a>
+          <a className="btn btn-ghost text-xl md:text-3xl md:font-extrabold">
+            Painting House
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1">{nabLinks}</ul>
         </div>
         <div className="navbar-end">
           {user?.email ? (
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 ">
               <div className="dropdown dropdown-hover">
                 <div tabIndex={0} role="button" className="btn m-1">
                   <div className="w-12">
-                    <img className="rounded-full " src={user?.photoURL || "hello"} />
+                    <img
+                      className="rounded-full "
+                      src={user?.photoURL || "hello"}
+                    />
                   </div>
                 </div>
                 <ul
                   tabIndex={0}
-                  className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                  className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 pr-5"
                 >
                   <li className="rounded-lg bg-green-300 border-2 border-slate-500">
                     <Link to="/profile" className="font-bold">
@@ -78,14 +83,17 @@ const NavBar = () => {
                   <li className="font-bold">
                     <Link to="/profile">Profile</Link>
                   </li>
-                  {/* <li className="font-bold">
-                    <Link to="/updateProfile">Update profile</Link>
-                  </li> */}
+                  <li className="font-bold">
+                    <Link
+                      onClick={logOut}
+                      className="btn btn-error text-white"
+                    >
+                      Log Out
+                    </Link>
+                  </li>
                 </ul>
               </div>
-              <button 
-              onClick={logOut} 
-              className="btn btn-error text-white">
+              <button onClick={logOut} className="btn btn-error text-white">
                 Log Out
               </button>
             </div>
@@ -95,9 +103,7 @@ const NavBar = () => {
                 <button className="btn bg-violet-400 text-white">Log In</button>
               </Link>
               <Link to="/register">
-                <button className="btn bg-cyan-400 text-white">
-                  Register
-                </button>
+                <button className="btn bg-cyan-400 text-white">Register</button>
               </Link>
             </div>
           )}
