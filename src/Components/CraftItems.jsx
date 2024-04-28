@@ -37,7 +37,7 @@ const CraftItems = ({ item }) => {
             </h2>
           </div>
           <div>
-            <Link to={`/item/${_id}`}>
+            <Link to={`/ViewDetails/${_id}`}>
               <button className="btn bg-green-400 rounded-full w-full justify-center border-b-4 border-sky-500 hover:border-fuchsia-600 hover:bg-sky-500 hover:text-white">
                 View Details
               </button>

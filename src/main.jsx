@@ -14,6 +14,7 @@ import AllArts from "./Pages/AllArts.jsx";
 import AddCraftItem from "./Pages/AddCraftItem.jsx";
 import MyArtsCraftList from "./Pages/MyArtsCraftList.jsx";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute.jsx";
+import ViewDetails from "./Components/ViewDetails.jsx";
 // import CraftItems from "./Components/CraftItems.jsx";
 
 const router = createBrowserRouter([
@@ -59,11 +60,12 @@ const router = createBrowserRouter([
         </PrivateRoute>
         ),
       },
-      // {
-      //   path: "/CraftItems",
-      //   element: <CraftItems />,
-      //   loader: () => fetch('http://localhost:5000/addItems'),
-      // }
+      {
+        path: "/ViewDetails/:id",
+        element: <PrivateRoute><ViewDetails /></PrivateRoute>,
+        loader: ({ params }) => fetch(`http://localhost:5000/addItems/${params.id}`),
+        
+      }
     ],
   },
 ]);
