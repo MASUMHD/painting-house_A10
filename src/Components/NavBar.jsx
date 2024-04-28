@@ -60,7 +60,7 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">{nabLinks}</ul>
         </div>
         <div className="navbar-end">
-          {user?.email ? (
+          {user? (
             <div className="flex items-center gap-2 ">
               <div className="dropdown dropdown-hover">
                 <div tabIndex={0} role="button" className="btn m-1">

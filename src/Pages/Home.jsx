@@ -12,15 +12,15 @@ const Home = () => {
         <h1 className="text-5xl font-bold text-center">
           Craft items 
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
         {
             addItems.slice(0, 6).map((item) => <CraftItems key={item._id} item={item}></CraftItems>)
          }
         </div>
       </div>
-      <Link to="/allarts" className="flex justify-center mt-10 mb-10">
+      {/* <Link to="/allarts" className="flex justify-center mt-10 mb-10">
         <button className="btn rounded-full bg-rose-500 w-[150px] text-white hover:bg-green-400 hover:text-white  ">View All...</button>
-      </Link>
+      </Link> */}
 
       
     </div>
