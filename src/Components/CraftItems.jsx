@@ -16,7 +16,6 @@ const CraftItems = ({ item }) => {
   return (
     <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 pr-5 mt-10 ml-3">
       
-
       <div className="flex flex-col items-center ">
         <div className="max-w-xs p-4 rounded-md shadow-md dark:bg-red-200 dark:text-gray-900">
           <img
