@@ -8,7 +8,7 @@ const Castomar = () => {
           </h1>
         </div>
         <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10">
-          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg border-2 border-gray-600 rounded-lg">
+          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-2xl  rounded-lg">
             <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
               <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                 <svg
@@ -36,7 +36,7 @@ const Castomar = () => {
             </div>
             <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-default-600 dark:text-gray-50">
               <img
-                src="https://source.unsplash.com/50x50/?portrait?1"
+                src="https://img.freepik.com/free-photo/indoor-picture-cheerful-handsome-young-man-having-folded-hands-looking-directly-smiling-sincerely-wearing-casual-clothes_176532-10257.jpg?size=626&ext=jpg&ga=GA1.1.225509851.1714227379&semt=sph"
                 alt=""
                 className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-300"
               />
@@ -46,8 +46,8 @@ const Castomar = () => {
               <p className="text-sm uppercase text-gray-900">Aliquam illum</p>
             </div>
           </div>
-          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg border-2 border-gray-600 rounded-lg">
-            <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
+          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-xl  rounded-lg">
+            <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50 border-red-500 rounded-lg">
               <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -74,9 +74,9 @@ const Castomar = () => {
             </div>
             <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-default-600 dark:text-gray-50">
               <img
-                src="https://source.unsplash.com/50x50/?portrait?2"
+                src="https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?size=626&ext=jpg&ga=GA1.1.225509851.1714227379&semt=sph"
                 alt=""
-                className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-300"
+                className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 "
               />
               <p className="text-xl font-semibold leading-tight text-gray-900">
                 Distinctio Animi
@@ -84,8 +84,8 @@ const Castomar = () => {
               <p className="text-sm uppercase text-gray-900">Aliquam illum</p>
             </div>
           </div>
-          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg border-2 border-gray-600 rounded-lg">
-            <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
+          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-xl  rounded-lg ">
+            <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50 ">
               <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -112,9 +112,9 @@ const Castomar = () => {
             </div>
             <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-default-600 dark:text-gray-50">
               <img
-                src="https://source.unsplash.com/50x50/?portrait?3"
+                src="https://img.freepik.com/free-photo/medium-shot-male-flight-attendant-posing_23-2150312701.jpg?size=626&ext=jpg&ga=GA1.1.225509851.1714227379&semt=sph"
                 alt=""
-                className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-300"
+                className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 "
               />
               <p className="text-xl font-semibold leading-tight text-gray-900">
                 Distinctio Animi
@@ -122,7 +122,7 @@ const Castomar = () => {
               <p className="text-sm uppercase text-gray-900">Aliquam illum</p>
             </div>
           </div>
-          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg border-2 border-gray-600 rounded-lg">
+          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-xl  rounded-lg">
             <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
               <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                 <svg
@@ -150,9 +150,9 @@ const Castomar = () => {
             </div>
             <div className="flex flex-col  items-center justify-center p-8 rounded-b-lg dark:bg-default-600 dark:text-gray-50">
               <img
-                src="https://source.unsplash.com/50x50/?portrait?4"
+                src="https://img.freepik.com/free-photo/portrait-joyful-young-man-white-shirt_171337-17467.jpg?size=626&ext=jpg&ga=GA1.1.225509851.1714227379&semt=sph"
                 alt=""
-                className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-300"
+                className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500"
               />
               <p className="text-xl font-semibold leading-tight text-gray-900">
                 Distinctio Animi

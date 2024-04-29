@@ -15,7 +15,7 @@ const Categories = ({ item }) => {
 
   return (
     <div 
-    className=" rounded-full">
+    className=" rounded-full p-3">
       <Link to={`/subcategory/${item.subcategory_name}`}>
         <div className="rounded-xl shadow-md sm:w-96 dark:bg-gray-50 dark:text-gray-800">
           

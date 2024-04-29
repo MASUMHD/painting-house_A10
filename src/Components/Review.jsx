@@ -1,7 +1,7 @@
 const Review = () => {
   return (
     <div className="mt-10 mb-10 ">
-      <div className="flex flex-col max-w-full p-8 shadow-sm rounded-xl lg:p-12 dark:bg-gray-200 dark:text-gray-800">
+      <div className="flex flex-col w-full p-8 shadow-sm rounded-xl lg:p-12 dark:bg-gray-200 dark:text-gray-800">
         <div className="flex flex-col w-full">
           <h2 className="text-3xl font-semibold text-center">
             Customer reviews
