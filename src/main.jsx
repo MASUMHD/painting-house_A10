@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("http://localhost:5000/addItems"),
+        loader: () => fetch("https://painting-house-server.vercel.app"),
       },
       {
         path: "/login",
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
       {
         path: "/allarts",
         element: <AllArts />,
-        loader: () => fetch("http://localhost:5000/addItems"),
+        loader: () => fetch("https://painting-house-server.vercel.app"),
       },
       {
         path: "/AddCraftItem",
@@ -71,12 +71,12 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/addItems/${params.id}`),
+          fetch(`https://painting-house-server.vercel.app/${params.id}`),
       },
       {
         path: "/update/:id",
         element: <Update />,
-        loader: ({ params }) => fetch(`http://localhost:5000/addItems/${params.id}`),
+        loader: ({ params }) => fetch(`https://painting-house-server.vercel.app/${params.id}`),
       },
       {
         path: "/subcategory/:subcategory_name",

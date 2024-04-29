@@ -50,7 +50,7 @@ const Update = () => {
     };
     console.log(addItem);
 
-    fetch(`http://localhost:5000/addItems/${_id}`, {
+    fetch(`https://painting-house-server.vercel.app/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
