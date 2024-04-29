@@ -1,6 +1,9 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Banner from "../Components/Banner";
 import CraftItems from "../Components/CraftItems";
+import Review from "../Components/Review";
+import Castomar from "../Components/Castomar";
+import Categories from "../Components/Categories";
 
 const Home = () => {
   const addItems = useLoaderData();
@@ -9,20 +12,27 @@ const Home = () => {
     <div>
       <Banner />
       <div>
-        <h1 className="text-5xl font-bold text-center">
-          Craft items 
-        </h1>
+        <h1 className="text-5xl font-bold text-center">Craft items</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-        {
-            addItems.slice(0, 6).map((item) => <CraftItems key={item._id} item={item}></CraftItems>)
-         }
+          {addItems.slice(0, 6).map((item) => (
+            <CraftItems key={item._id} item={item}></CraftItems>
+          ))}
         </div>
       </div>
-      {/* <Link to="/allarts" className="flex justify-center mt-10 mb-10">
-        <button className="btn rounded-full bg-rose-500 w-[150px] text-white hover:bg-green-400 hover:text-white  ">View All...</button>
-      </Link> */}
-
-      
+      <div className="pt-10 pb-10">
+        <h1 className="text-5xl font-bold text-center"> Art & Craft Categories</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 mb-10">
+          {
+            addItems.slice(0,6).map((item) => (
+              <Categories key={item._id} item={item}></Categories>
+            ))
+          }
+        </div>
+      </div>
+      <div>
+        <Review />
+        <Castomar />
+      </div>
     </div>
   );
 };

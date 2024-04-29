@@ -43,7 +43,7 @@ const SocalLogin = () => {
 
       <button
         onClick={() => handalSocialLogin(githubLogin)}
-        className="w-full mt-4 btn btn-outline  text-xl"
+        className="w-full mt-4 btn btn-outline btn-accent  text-xl"
       >
         <BsGithub />
         Login with GitHub
