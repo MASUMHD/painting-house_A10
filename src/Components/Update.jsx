@@ -50,7 +50,7 @@ const Update = () => {
     };
     console.log(addItem);
 
-    fetch(`http://localhost:5000/addItem/${_id}`, {
+    fetch(`http://localhost:5000/addItems/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -73,7 +73,7 @@ const Update = () => {
 
   return (
     <div>
-      <h1>Update {updateArt.item_name}</h1>
+      {/* <h1>Update {updateArt.item_name}</h1> */}
       <div className="mt-6 mb-8">
         <section className="p-6 rounded-2xl bg-emerald-200">
           <form
