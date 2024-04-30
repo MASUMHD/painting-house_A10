@@ -5,13 +5,16 @@ import { getAuth } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+// console.log(import.meta.env.VITE_PASS);
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDJxQX1SSFXaDfzlSn0bUcz2P6Jkmg9E1s",
-  authDomain: "painting-house-6de84.firebaseapp.com",
-  projectId: "painting-house-6de84",
-  storageBucket: "painting-house-6de84.appspot.com",
-  messagingSenderId: "290497868138",
-  appId: "1:290497868138:web:e6b88babf71e0afd113513"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
