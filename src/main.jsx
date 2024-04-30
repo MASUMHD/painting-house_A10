@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("https://painting-house-server.vercel.app"),
+        loader: () => fetch("https://painting-house-server.vercel.app/addItems"),
       },
       {
         path: "/login",
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
       {
         path: "/allarts",
         element: <AllArts />,
-        loader: () => fetch("https://painting-house-server.vercel.app"),
+        loader: () => fetch("https://painting-house-server.vercel.app/addItems"),
       },
       {
         path: "/AddCraftItem",
@@ -71,17 +71,17 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`https://painting-house-server.vercel.app/${params.id}`),
+          fetch(`https://painting-house-server.vercel.app/addItems/${params.id}`),
       },
       {
         path: "/update/:id",
         element: <Update />,
-        loader: ({ params }) => fetch(`https://painting-house-server.vercel.app/${params.id}`),
+        loader: ({ params }) => fetch(`https://painting-house-server.vercel.app/addItems/${params.id}`),
       },
       {
         path: "/subcategory/:subcategory_name",
         element: <SubCategory />,
-        loader: ({ params }) => fetch(`http://localhost:5000/my/${params.subcategory_name}`),
+        loader: ({ params }) => fetch(`https://painting-house-server.vercel.app/my/${params.subcategory_name}`),
 
       }
     ],

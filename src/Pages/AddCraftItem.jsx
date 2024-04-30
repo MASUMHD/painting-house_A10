@@ -36,7 +36,7 @@ const AddCraftItem = () => {
     console.log(addItem);
 
     // send data to server
-    fetch('http://localhost:5000/addItem',
+    fetch('https://painting-house-server.vercel.app/addItems',
     {
         method: 'POST',
         headers: {
