@@ -11,7 +11,7 @@ const MyArtsCraftList = () => {
   const [filterOption, setFilterOption] = useState("All");
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myArts/${user?.email}`)
+    fetch(`https://painting-house-server.vercel.app/myArts/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
